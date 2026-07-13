@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic Train Ticket Booking System (IR Sim)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Indian Railways Booking Simulator</h1>
+            <p>Project Demo: Search, Schedule, and Simulated Booking</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <h2>Find Your Train</h2>
+        <form id="search-form">
+            <div>
+                <label for="source">Source City</label>
+                <select id="source" required>
+                    <option value="">Select Source</option>
+                </select>
+            </div>
+            <div>
+                <label for="destination">Destination City</label>
+                <select id="destination" required>
+                    <option value="">Select Destination</option>
+                </select>
+            </div>
+            <div>
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <button type="submit">SEARCH TRAINS</button>
+        </form>
+
+        <h2>Available Trains</h2>
+        <div id="results-message">
+            <p>Please use the search form above to find trains between major cities.</p>
+        </div>
+        <div id="results-container">
+            </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
